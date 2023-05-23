@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_8sdp"
+    android:background="@color/colorPrimary_500">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_toStartOf="@+id/ly_icon"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        app:cardCornerRadius="@dimen/_7sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:src="@drawable/ic_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:text="Cari Produk Disini"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/ly_icon"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:src="@drawable/ic_envelope"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            app:tint="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:src="@drawable/ic_notifications"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            app:tint="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:src="@drawable/ic_shopping_cart"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            app:tint="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:src="@drawable/ic_menu"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:tint="@color/white"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

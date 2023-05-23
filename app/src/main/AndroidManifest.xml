@@ -2,24 +2,57 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name=".util.MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/iconapp"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.Marketplace"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name=".ui.SplashActivity" android:exported="true" android:label="@string/title_activity_navigation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.navigation.NavigationActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+        </activity>
+        <activity android:name="com.android.marketplace.ui.auth.LoginActivity" />
+        <activity android:name="com.android.marketplace.ui.auth.RegisterActivity" />
+        <activity android:name="com.android.marketplace.ui.updateProfil.UpdateProfilActivity" />
+        <activity android:name="com.android.marketplace.ui.toko.BukaTokoActivity" />
+        <activity android:name="com.android.marketplace.ui.toko.TokoSayaActivity" />
+        <activity android:name="com.android.marketplace.ui.alamatToko.ListAlamatTokoActivity" />
+        <activity android:name="com.android.marketplace.ui.alamatToko.TambahAlamatTokoActivity" />
+        <activity android:name="com.android.marketplace.ui.alamatToko.EditAlamatTokoActivity" />
+        <activity android:name="com.android.marketplace.ui.produk.CreateProdukActivity" />
+        <activity android:name="com.android.marketplace.ui.produk.ListProdukTokoActivity" />
+        <activity android:name="com.android.marketplace.ui.produk.UpdateProdukActivity" />
+        <activity android:name="com.android.marketplace.ui.kategori.ListKategoriAdminActivity" />
+        <activity android:name="com.android.marketplace.ui.adminPanel.AdminPanelActivity" />
+        <activity android:name="com.android.marketplace.ui.kategori.CreateKategoriActivity" />
+        <activity android:name="com.android.marketplace.ui.kategori.SelectKategoriActivity" />
+        <activity android:name="com.android.marketplace.ui.slider.ListSliderAdminActivity" />
+        <activity android:name="com.android.marketplace.ui.slider.CreateSliderActivity" />
+        <activity android:name="com.android.marketplace.ui.produk.DetailProdukActivity" />
     </application>
 
 </manifest>

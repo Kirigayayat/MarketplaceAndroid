@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">Marketplace</string>
+    <string name="app_name">TokoKita</string>
+    <string name="title_activity_navigation">TokoKita</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_transaksi">Transaksi</string>
+    <string name="star">*</string>
+    <string name="tips">Tips: Jenis Produk + Keterangan Tambahan</string>
+    <string name="rp_">Rp.</string>
+    <string name="_1">1</string>
+    <string name="_500">500</string>
+    <string name="gr">gr</string>
+    <string name="diskon">Diskon</string>
+    <string name="persen">%</string>
+    <string name="deskripsi_produk_kamu">Deskripsi produk kamu</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="grosir">Grosir</string>
+    <string name="jumlah_minimal">Jumlah Minimal</string>
+    <string name="harga_grosir">Harga Grosir</string>
+    <string name="varian">Varian</string>
+    <string name="ubah">Ubah</string>
+    <string name="tambah_varian_agar_pembeli_mudah_memilih">Tambah varian agar pembeli mudah memilih</string>
+    <string name="tambah_varian">Tambah Varian</string>
+    <string name="title">Title</string>
+    <string name="rp_0">Rp.0</string>
+    <string name="stok">Stok</string>
+    <string name="hapus">Hapus</string>
+    <string name="tidak_ada_alamat">Tidak ada Alamat</string>
+    <string name="image_splashscreen">Image_SplashScreen</string>
 </resources>
